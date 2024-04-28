@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "pnpm --filter 'backend' test",
     "dev": "pnpm --filter '**' dev",
-    "dumb" : "pnpm --filter 'backend' test",
     "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "husky": "9.0.11"
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.2"
   }
 }
